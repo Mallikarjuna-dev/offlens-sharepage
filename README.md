@@ -19,16 +19,14 @@ This is a **Next.js-based** web application that displays Chennai Super Kings (C
 
 ## Folder Structure
 ```
-├── components/      # Reusable components
-├── pages/           # Next.js pages
+offlens-sharepage
 ├── public/          # Static assets
-├── styles/          # Global styles (if any)
-├── utils/           # Utility functions
+├── app/           # Next.js pages
 ├── api/             # API Routes
+├── components/      # Reusable components
+├── styles/          # Global styles
 ├── README.md        # Documentation
-├── data.xlsx        # Sample Excel file
 ├── CSK-Shares.postman_collection.json  # Postman collection
-├── vercel.json      # Vercel config (if needed)
 ```
 
 
@@ -46,7 +44,7 @@ This is a **Next.js-based** web application that displays Chennai Super Kings (C
 ## How to Run Locally
 1. Clone the repo:
 ```
-git clone https://github.com/your-repo.git
+git clone https://github.com/Mallikarjuna-dev/offlens-sharepage.git
 ```
 
 2. Install dependencies:

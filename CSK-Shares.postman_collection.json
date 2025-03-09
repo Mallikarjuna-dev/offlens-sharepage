@@ -1,0 +1,31 @@
+{
+	"info": {
+		"_postman_id": "a0c0e36d-22af-49f4-98bb-3b8405cbdee1",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19126737",
+		"_collection_link": "https://winter-crescent-303993.postman.co/workspace/Team-Workspace~95f1876e-0fd4-4092-8bb6-f7548064da03/collection/19126737-a0c0e36d-22af-49f4-98bb-3b8405cbdee1?action=share&source=collection_link&creator=19126737"
+	},
+	"item": [
+		{
+			"name": "upload data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/google-sheet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"google-sheet"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
