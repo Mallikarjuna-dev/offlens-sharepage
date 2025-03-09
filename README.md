@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CSK Shares Web Application
 
-## Getting Started
+## Overview
+This is a **Next.js-based** web application that displays Chennai Super Kings (CSK) share prices, allows users to submit queries, and updates data dynamically using an Excel upload and Google Sheets integration.
 
-First, run the development server:
+## Features
+- ✅ **Fully responsive UI** (Mobile & Large Screens)
+- ✅ **Live Share Price Chart** using Recharts
+- ✅ **Contact Form with Google Sheets Integration**
+- ✅ **Admin API to Upload Excel Data**
+- ✅ **Postman Collection for API Testing**
+- ✅ **Vercel Deployment**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Tech Stack
+- **Frontend:** Next.js, Tailwind CSS, Recharts
+- **Backend:** Next.js API Routes, Google Sheets API, xlsx library
+- **Database:** Google Sheets (for live query storage)
+
+
+## Folder Structure
+```
+├── components/      # Reusable components
+├── pages/           # Next.js pages
+├── public/          # Static assets
+├── styles/          # Global styles (if any)
+├── utils/           # Utility functions
+├── api/             # API Routes
+├── README.md        # Documentation
+├── data.xlsx        # Sample Excel file
+├── CSK-Shares.postman_collection.json  # Postman collection
+├── vercel.json      # Vercel config (if needed)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## API Endpoints
+| Method | Endpoint       | Description |
+|--------|---------------|-------------|
+| POST   | `/api/upload` | Uploads Excel file to update share prices |
+| POST   | `/api/google-sheet` | Saves contact form queries to Google Sheets |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
+- Hosted on **Vercel**: [CSK Shares Live Page](https://offlens-sharepage.vercel.app/)
 
-## Learn More
+- GitHub Repository: [CSK Shares GitHub Repo](https://github.com/Mallikarjuna-dev/offlens-sharepage)
 
-To learn more about Next.js, take a look at the following resources:
+## How to Run Locally
+1. Clone the repo:
+```
+git clone https://github.com/your-repo.git
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies:
+```
+npm install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Run the development server:
+```
+npm run dev
+```
